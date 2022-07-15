@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    display: flex;
+    height: 8vh;
+    margin: 15px 25px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: header;
+}
+
+.logo {
+    flex-grow: 1;
+    font-size: 1.6em;
+}
+
+.logo > span {
+    color: #d35400;
+}
+
+.links-navigation {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.mobile-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div {
+    width: 32px;
+    height: 2px;
+    background-color: #1c2833;
+    margin: 8px;
+}
+
+a {
+    padding: 5px 15px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #222;
+}
+
+.links-navigation > a:hover {
+    background-color: #d35400;
+}
+
+main {
+    margin: 15px 25px;
+    grid-area: main;
+}
+
+.principal {
+    height: 60vh;
+    margin: 20px 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 3.8em;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+}
+
+button {
+    margin-top: 25px;
+    padding: 10px 25px;
+    background-color: #d35400;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+
+}
+
+button:hover {
+    background-color: #cf783e;
+    color: #000;
+    transform: translateY(-3px);
+    /*box-shadow: 0px 0px 74px 19px rgba(0,0,0,0.35);*/
+}
+
+.circle {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    margin: 15px;
+    border-radius: 50%;
+    background-color: #d35400;
+    z-index: 0;
+}
+
+.banner-img > img {
+    width: 100%;
+}
+
+.secundario {
+    height: 60vh;
+    margin: 15px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner2-img > img {
+    height: 400px;
+    width: 400px;
+}
+
+.right2 {
+    margin: 100px;
+}
+
+.right2 h2 {
+    font-size: 2.5em;
+}
+
+.cardapio {
+    height: 60vh;
+    margin: 15px 25px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.circle2 {
+    height: 150px;
+    width: 150px;
+    background-color: #d35400;
+    border-radius: 50%;
+}
+
+.circle2 > img {
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 295px;
+    width: 200px;
+    margin: 25px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 17px 9px rgba(125,125,125,0.7);
+}
+
+.card:hover {
+    transform: translateY(-7px);
+}
+
+.title2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin: 25px;
+}
+
+.background {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    background: #d35400;
+    border-radius: 16px;
+}
+
+.form {
+    margin: 15px 25px;
+}
+
+.background > .text h1 {
+    margin: 15px 0px 0px 15px;
+    font-size: 2.8em;
+    color: #1c2833;    
+}
+
+.background > .text span {
+    margin: 0px 15px;
+    font-size: 3.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    color:  #808b96;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25px;
+}
+
+.btn-form {
+    background-color: #fff;
+}
+
+input {
+    margin: 3px;
+    padding: 8px;
+    width: 85%;
+    border: none;
+    border-radius: 16px;
+}
+
+footer {
+    margin: 20px 25px;
+}
+
+footer > h3 {
+    margin: 5px 0px 85px 0px;
+    text-align: center;
+}
+
+footer > hr, ul, ol, h6 {
+    margin: 15px;
+    text-align: center;
+}
+
+footer > hr {
+    color: #eaecee;
+}
+
+.btn-w {
+    position: fixed;
+    bottom: 30px;
+    right: 0px;
+    margin-right: 10px;
+}
+
+@media(max-width: 999px) {
+    .links-navigation {
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 308vh;
+        background: #d35400;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        z-index: 1;
+    }
+
+    .links-navigation a {
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}
